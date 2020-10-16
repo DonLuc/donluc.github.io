@@ -1,0 +1,13 @@
+li {
+    cursor: pointer;
+    display: inline;
+    padding-right: 15px;
+}
+
+ul {
+    margin: auto;
+}
+
+.isTabActive {
+    background: #439539;
+}

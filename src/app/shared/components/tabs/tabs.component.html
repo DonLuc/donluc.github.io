@@ -1,0 +1,9 @@
+<div class="tab-content"><ng-content></ng-content></div>
+<ul class="c-tabs l-row u-grid-justify--center u-padding--md">
+    <li *ngFor="let tab of tabs; let i = index"
+    (click)="selectTab(tab)"
+    (mouseenter)="hoverSelection(tab)" 
+    [class.selected]="tab.active">
+    <img [class.isTabActive]="tab.active"src="{{ tab.icon }}" class="u-image--24 c-tabs__link">
+    </li>
+</ul>
